@@ -4,5 +4,9 @@
 
 Existing Ingredients:
 <%= f.collection_check_boxes :ingredient_ids, Ingredient.all, :id, :name %>
+<%= f.fields_for ingredients do |ingr| %>
+<%= ingr.label :name %>
+<%= ingr.name %>
+<% end %>
 <%= f.submit %>
 <% end %>
