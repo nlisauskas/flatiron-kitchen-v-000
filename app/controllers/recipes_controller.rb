@@ -19,7 +19,7 @@ class RecipesController < ApplicationController
 
   def update
     @recipe = Recipe.find_by(params[:id])
-    
+    @recipe.update(recipe_params)
   end
 
   private
