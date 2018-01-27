@@ -12,7 +12,7 @@ class RecipesController < ApplicationController
   def show
     @recipe = Recipe.find_by(params[:id])
   end
-  
+
 
   private
 
