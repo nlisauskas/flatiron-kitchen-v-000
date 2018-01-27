@@ -4,7 +4,7 @@
 
 Existing Ingredients:
 <%= f.collection_check_boxes :ingredient_ids, Ingredient.all, :id, :name %>
-<%= f.fields_for ingredients do |ingr| %>
+<%= f.fields_for ingredient do |ingr| %>
 <%= ingr.label :name %>
 <%= ingr.text_field :name %>
 <% end %>
